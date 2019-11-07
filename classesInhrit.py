@@ -10,6 +10,7 @@ class Person:
 
     def firstName(self):
         return self.name.split()[0]
+        # print(self.name)
 
     def lastName(self):
         return self.name.split()[-1]
@@ -18,8 +19,9 @@ class Person:
         # print(self.pay)
         self.pay = int(self.pay*(1+percent) )
         # return self.pay = int(self.pay*(1+parent))
+        print('test #001 starts')
         print(self.pay)
-
+        print('test #001 ends')
 
 
 class Manager:
