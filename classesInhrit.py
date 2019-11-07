@@ -1,11 +1,12 @@
 # classes and inheritance
-
+# debugging using print function
 
 class Person:
     def __init__(self, name, job=None, pay=0):
         self.name = name
         self.job = job
         self.pay = pay
+        # print(self.pay)
 
     def firstName(self):
         return self.name.split()[0]
@@ -14,9 +15,11 @@ class Person:
         return self.name.split()[-1]
     
     def GiveRaise(self, percent):
-        print(self.pay)
+        # print(self.pay)
         self.pay = int(self.pay*(1+percent) )
         # return self.pay = int(self.pay*(1+parent))
+        print(self.pay)
+
 
 
 class Manager:
@@ -29,4 +32,4 @@ class Manager:
 if __name__ == '__main__':
     John = Manager('James Bond', 50000)
     John.GiveRaise(.20)
-    print(John)
+print(John)
